@@ -7,7 +7,7 @@
 *{
     margin: 0px;
     padding: 0px;
-
+    font-size: 1em;
 }
 
 :root{
@@ -39,15 +39,14 @@ header {
 }
 
 header > h1{
+    padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte-titulo);
-    font-size: 8vw;
-
+    font-size: 10vw;
 }
 
 header > p{
     padding-bottom: 50px;
-    font-size: 2em;
 }
 
 header a, footer a{
@@ -79,15 +78,30 @@ section.normal{
 }
 
 section.imagem{
-    display: inline-block;
-    padding: 5px;
     background-color: var(--cor3);
     color: var(--cor5);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.267);
-    
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.397);
+    }
+
+section#img-01{
+    background-image: url('../imagens/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img-02{
+    background-image: url('../imagens/imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer{
